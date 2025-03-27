@@ -30,3 +30,32 @@ Il existent plusieurs modificateur d'accès :
 - Le vide est utilisé généralement dans une classe main.
 - Le private est utilisé pour les variables d'une méthode.
 
+## Les containeurs
+**Les listes**
+En java il faut importer les listes depuis `import java.util.List;`, une liste est une collection ordonnée qui peut contenir des éléments en double.
+#### Implémentations principales
+- `ArrayList<E>` → Basé sur un **tableau dynamique** 
+- `LinkedList<E>` → Basé sur une **liste chaînée** 
+
+| Opération                            | `ArrayList`                   | `LinkedList`                           |
+| ------------------------------------ | ----------------------------- | -------------------------------------- |
+| **Accès (`get(i)`)**                 | Très rapide `O(1)`            | Lent `O(n)`                            |
+| **Ajout/Suppression (`add/remove`)** | Lent `O(n)` (au début/milieu) | Rapide `O(1)` (début), `O(n)` (milieu) |
+| **Utilisation**                      | Pour **accès rapide**         | Pour **modifications fréquentes**      |
+
+**Exemple de liste**
+
+```
+public class Main {
+    public static void main(String[] args) {
+        List<String> arrayList = new ArrayList<>();
+        List<String> linkedList = new LinkedList<>();
+
+        arrayList.add("Alice");
+        linkedList.add("Bob");
+
+        System.out.println(arrayList.get(0)); // Alice
+        System.out.println(linkedList.get(0)); // Bob
+    }
+}
+```
