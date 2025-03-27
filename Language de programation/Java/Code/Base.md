@@ -15,6 +15,7 @@ Cela donne :
 - String : type String.
 - afficher : nom.
 - (5) : paramètre.
+
 Il existent plusieurs modificateur d'accès :
 
 | Modificateur | Accès depuis la même classe | Accès depuis le même package | Accès depuis une sous-classe | Accès depuis une autre classe |
