@@ -23,6 +23,7 @@ Il existent plusieurs modificateur d'accès :
 | protected    | Oui                         | Oui                          | Oui                          | Non                           |
 | (par défaut) | Oui                         | Oui                          | Non                          | Non                           |
 | private      | Oui                         | Non                          | Non                          | Non                           |
+
 Le **public** est souvent utilisé pour appelle une fonctions.
 Le protected est utilisé pour une classe mère en cas d'héritage.
 Le vide est utilisé généralement dans une classe main.
